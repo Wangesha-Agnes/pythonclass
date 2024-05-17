@@ -30,4 +30,5 @@ def sum_and_greet(*args, **kwargs):
     greeting = f"Hello {f} {l} total of your numbers is {total}"
     return greeting
 
-                 
+num = 407
+    
