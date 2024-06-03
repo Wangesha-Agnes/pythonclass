@@ -48,3 +48,33 @@ account = Bank(account_number="abcd123456789", current_balance=20000)
 account.deposit(3500)
 account.withdraw(5000)
 account.display_transaction_history()
+
+
+class ClothColorChanger {
+  constructor() {
+    this.moods = {
+      "happy": "yellow",
+      "sad": "blue",
+      "angry": "red",
+      "calm": "green"
+    };
+  }
+  changeClothColor(mood) {
+    if (this.moods[mood]) {
+      console.log('Ankara cloth changed to ${this.moods[mood]} color of ${mood} mood.');
+      return this.moods[mood];
+    } else {
+      console.error("Invalid mood.");
+      return null;
+    }
+  }
+  startChangingColor(mood) {
+    const color = this.changeClothColor(mood);
+    // Here you can apply the color to your Ankara element
+    console.log("Apply color", color, "to the Ankara element.");
+  }
+}
+# // Usage
+# const ankaraChanger = new ClothColorChanger();
+# ankaraChanger.startChangingColor("happy"); 
+# Change color to "happy" mood
